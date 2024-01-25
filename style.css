@@ -1,0 +1,64 @@
+body{
+    background-color: #F7F7F7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #112e41;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+h1{
+font-size: 4rem;
+}
+
+/* Text Color */
+.text-orange{
+color: #ff7214;
+}
+.text-gray{
+    color:#6c6c6f;
+}
+
+
+
+/* bg color */
+.bg-orange{
+    background-color: #ff7214;
+
+}
+
+
+/* button */
+.btn-orange {
+    background-color: #ff7214;
+    border-radius: 50px;
+    color: #fff;
+}
+
+/* Header */
+.shape-1{
+max-width: 50px;
+left:40px;
+}
+
+/* About US */
+.bg-about-us{
+margin-left: 70px;   
+    max-width: 380px;
+    max-height: 280px;
+}
+.h-85{
+    height: 85%;
+}
+
+
+@media (max-width:990px){
+    h1{
+        font-size: 3rem;
+        }
+}
+@media (max-width:570px){
+    h1{
+        font-size: 2rem;
+        }
+}
