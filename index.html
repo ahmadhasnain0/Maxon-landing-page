@@ -5,56 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+    <Header class="container">
     <!-- Navbar -->
-    <section>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg py-3 m-0 w-100" id="home">
-                <div class="container-fluid m-1 px-0 w-100 align-items-center">
-                    <a class="navbar-brand " href="#">
-                        <img src="./images/logo.png" alt="Logo" loading="lazy" class="logo px-auto px-md-5">
-                    </a>
-                    <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarButtonsExample" aria-controls="navbarButtonsExample"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                            class="bi bi-list" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-                        </svg>
-                    </button>
-                    <div class="collapse navbar-collapse mt-1 flex-row-reverse " id="navbarButtonsExample">
-                        <ul class="navbar-nav me-5 mb-2 mb-lg-0 fw-bold">
-                            <li class="nav-item ">
-                                <a class="nav-link" href="#">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">ABOUT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Project</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+
+    <nav class="navbar  navbar-expand-lg py-3 m-0 w-100" id="home">
+        <div class="container-fluid m-1 px-0 w-100 align-items-center">
+            <a class="navbar-brand " href="#">
+                <img src="./images/logo.png" width="auto" height="auto" alt="Logo" loading="lazy" class=" px-auto px-md-5">
+            </a>          <button class="navbar-toggler border-0 p-1 navbar-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <a class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel" href="#">
+                    <img src="./images/logo.png" width="auto" height="auto" alt="Logo" loading="lazy" class=" px-auto">
+                </a> 
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- Navbar ends -->
+      </nav>
+          <!-- Navbar ends -->
+
+    </Header>
+    
     <!-- Header starts -->
     <section class="pt-5">
         <div class="container">
@@ -118,5 +124,7 @@
         </div>
     </section>
     <!-- About section ends -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

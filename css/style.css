@@ -1,14 +1,27 @@
-body{
-    background-color: #F7F7F7;
-}
-h1, h2, h3, h4, h5, h6 {
-    color: #112e41;
-    font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-}
-h1{
-font-size: 4rem;
-}
+:root {
+    --primary: #ff7214;
+    --secondary: #6c6c6f;
+    /* --ternary: #d9d9d9;
+    --purple: #8aaaf5;
+    --gray: #e6e6dc;
+    --secondary-gray: #7c7c7a;
+    --beige: #b4c1db; */
+  }
+  /* fonts to use*/
+  @font-face {
+    font-family: Bukra;
+    src: url(../fonts/Bukra.ttf);
+  }
+  
+  * {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Bukra';
+  }
+  html,
+  body {
+    margin: 0px;
+    height: 100%;
+  }
 /* Text Color */
 .text-orange{
 color: #ff7214;
@@ -27,6 +40,11 @@ color: #ff7214;
     border-radius: 50px;
     color: #fff;
 }
+
+/* Navbar */
+.navbar-button:focus{
+    box-shadow: 0 0 05px #ff7214;}
+
 /* Header */
 .shape-1{
 max-width: 50px;
