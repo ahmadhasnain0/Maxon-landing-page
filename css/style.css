@@ -1,56 +1,71 @@
 :root {
     --primary: #ff7214;
     --secondary: #6c6c6f;
-    /* --ternary: #d9d9d9;
-    --purple: #8aaaf5;
+     --ternary: #F7F7F7;
+   /* --purple: #8aaaf5;
     --gray: #e6e6dc;
     --secondary-gray: #7c7c7a;
     --beige: #b4c1db; */
   }
   /* fonts to use*/
   @font-face {
-    font-family: Bukra;
-    src: url(../fonts/Bukra.ttf);
+    font-family: poppins ;
+    src: url(../font/Poppins-Regular.ttf);
   }
   
   * {
     -webkit-font-smoothing: antialiased;
-    font-family: 'Bukra';
+    font-family: 'poppins';
   }
   html,
   body {
     margin: 0px;
     height: 100%;
   }
+  
 /* Text Color */
 .text-orange{
-color: #ff7214;
+color: var(--primary);
 }
 .text-gray{
-    color:#6c6c6f;
+    color:var(--secondary);
 }
 /* bg color */
 .bg-orange{
-    background-color: #ff7214;
-
+    background-color: var(--primary);
+}
+.bg-light-gray{
+    background-color:var(--ternary);
 }
 /* button */
 .btn-orange {
-    background-color: #ff7214;
+    background-color: var(--primary);
     border-radius: 50px;
     color: #fff;
 }
+.btn-orange:hover {
+    border:1px solid var(--primary);
+    color: var(--primary);
+}
 
-/* Navbar */
+/* Navbar css starts here */
 .navbar-button:focus{
-    box-shadow: 0 0 05px #ff7214;}
+    box-shadow: 0 0 05px var(--primary);
+}
+    .nav-link:hover{
+        color:var(--primary)
+    }
+/* Navbar css ends here */
 
-/* Header */
+/* Header inner section css starts */
 .shape-1{
 max-width: 50px;
 left:40px;
 }
-/* About US */
+
+/* Header inner section css end */
+
+/* About US section css starts */
 .bg-about-us{
 margin-left: 70px;   
     max-width: 380px;
@@ -59,13 +74,4 @@ margin-left: 70px;
 .h-85{
     height: 85%;
 }
-@media (max-width:990px){
-    h1{
-        font-size: 3rem;
-        }
-}
-@media (max-width:570px){
-    h1{
-        font-size: 2rem;
-        }
-}
+/* About US section css ends */
