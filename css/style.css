@@ -1,16 +1,19 @@
 :root {
     --primary: #ff7214;
     --secondary: #6c6c6f;
-     --ternary: #F7F7F7;
-   /* --purple: #8aaaf5;
-    --gray: #e6e6dc;
-    --secondary-gray: #7c7c7a;
+    --ternary: #F7F7F7;
+    --blue: #112e41;
+    /*    --secondary-gray: #7c7c7a;
     --beige: #b4c1db; */
   }
   /* fonts to use*/
   @font-face {
     font-family: poppins ;
     src: url(../font/Poppins-Regular.ttf);
+  }
+  @font-face {
+    font-family: poppins-bold ;
+    src: url(../font/Poppins-Bold.ttf);
   }
   
   * {
@@ -30,6 +33,10 @@ color: var(--primary);
 .text-gray{
     color:var(--secondary);
 }
+.text-blue{
+    color:var(--blue);
+}
+
 /* bg color */
 .bg-orange{
     background-color: var(--primary);
@@ -46,6 +53,27 @@ color: var(--primary);
 .btn-orange:hover {
     border:1px solid var(--primary);
     color: var(--primary);
+}
+
+/* font size */
+.f-12{
+    font-size: 12px;
+}
+.f-14{
+    font-size: 14px;
+}
+.f-48{
+    
+    font-size: 48px;
+}
+.f-bold{
+    font-family:poppins-bold;
+
+}
+
+/* letter spacing */
+.ls-1{
+letter-spacing: 1px;
 }
 
 /* Navbar css starts here */
@@ -75,3 +103,25 @@ margin-left: 70px;
     height: 85%;
 }
 /* About US section css ends */
+
+
+
+/* Responsive */
+@media screen and (max-width:550px){
+    .f-48{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:380px){
+    .f-48{
+        font-size: 32px;
+    }
+    .f-12{
+        font-size: 12px;
+    }
+    .f-14{
+        font-size: 12px;
+    }
+
+}
