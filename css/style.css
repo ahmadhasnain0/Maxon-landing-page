@@ -25,6 +25,9 @@
     margin: 0px;
     height: 100%;
   }
+  a{
+    text-decoration: none;
+  }
   
 /* Text Color */
 .text-orange{
@@ -84,6 +87,11 @@ letter-spacing: 1px;
     margin-bottom: 80px;
 }
 
+/* custom padding */
+.pb-80{
+    padding-bottom: 80px;
+}
+
 /* Navbar css starts here */
 .navbar-button:focus{
     box-shadow: 0 0 05px var(--primary);
@@ -111,7 +119,7 @@ margin-left: 70px;
 /* About US section css ends */
 
 
-/* Features section css ends */
+/* Features section css starts */
 
 
 .iconBox {
@@ -150,6 +158,25 @@ margin-left: 70px;
 }
 /* Features section css ends */
 
+/* experience section css starts */
+
+
+.content-box-fluid {
+    width: 100%;
+}
+.read-more {
+    color: var(--blue);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+}
+
+.image{
+height: 100%;
+width:100%
+}
+/* experience section css ends */
 
 
 /* Responsive */
@@ -163,6 +190,10 @@ margin-left: 70px;
             max-width: 32%;
             max-height: 280px;
         }
+        .image{
+            height: 100%;
+            width:100%
+            }
 }
 
 @media screen and (max-width:1390px){
@@ -170,6 +201,10 @@ margin-left: 70px;
         width: 100%;
 
     }
+    .image{
+        height: 350px;
+        width:100%
+        }
     
 }
 
@@ -179,11 +214,26 @@ margin-left: 70px;
             max-width: 580px;
             max-height: 320px;
         }
+        .pb-80{
+            padding-bottom: 40px;
+        }
+}
+@media screen and (min-width: 768px){
+.content-box-fluid {
+    max-width: 505px;
+}
+
+
+
 }
 @media screen and (max-width:550px){
     .f-48{
         font-size: 40px;
     }
+    .image{
+        height: 250px;
+  
+        }
 }
 
 
@@ -203,6 +253,6 @@ margin-left: 70px;
     .mb-80{
         margin-bottom: 20px;
     }
-    
+   
 
 }
