@@ -1,9 +1,11 @@
 :root {
     --primary: #ff7214;
     --secondary: #6c6c6f;
-    --ternary: #F7F7F7;
+    --ternary: #f6f7fb;
     --blue: #112e41;
     --dark-blue: #10233A;
+    --white:#fff;
+    --light-gray:#e5e6ea;
 }
 /* fonts to use*/
 @font-face {
@@ -20,7 +22,7 @@
 }
 html,
 body {
-    margin: 0px;
+    margin: 0;
     height: 100%;
 }
 a {
@@ -60,7 +62,7 @@ ul {
 .btn-orange {
     background-color: var(--primary);
     border-radius: 50px;
-    color: #fff;
+    color:var(--white);
 }
 .btn-orange:hover {
     border: 1px solid var(--primary);
@@ -128,7 +130,7 @@ ul {
 
 /* Features section css starts */
 .iconBox {
-    border: 5px solid #f6f7fb;
+    border: 5px solid var(--ternary);
     border-radius: 5px;
     padding: 40px 25px;
     position: relative;
@@ -188,7 +190,7 @@ ul {
 /* blog section css starts */
 .blog-content {
     padding: 30px 25px;
-    border: 5px solid #f6f7fb;
+    border: 5px solid var(--ternary);
 }
 /* blog section css ends */
 
@@ -197,25 +199,27 @@ ul {
     color: var(--secondary);
     display: block;
 }
-
 .contact-info-img {
     display: inline-block;
     height: 25px;
     width: 25px;
     margin-right: 20px;
 }
-
 form .input {
-    border: 1px solid #e5e6ea;
+    border: 1px solid var(--light-gray);
     border-radius: 0;
     padding: 20px 25px;
     font-size: 14px;
-    color: #999;
+    color:var(--secondary);
     margin-bottom: 30px;
     height: 60px;
 }
-form textarea.form-control {
-    height: 180px;
+form .input:active,form .input:focus {
+border: 1px solid var(--primary) ;
+box-shadow: none;
+}
+.h-180 {
+    height: 180px!important;
 }
 /* contact section css ends */
 
