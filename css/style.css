@@ -41,6 +41,7 @@ ul {
 .text-blue {
     color: var(--blue);
 }
+
 /* bg color */
 .bg-orange {
     background-color: var(--primary);
@@ -54,6 +55,7 @@ ul {
 .bg-dark-blue {
     background-color: var(--dark-blue);
 }
+
 /* button */
 .btn-orange {
     background-color: var(--primary);
@@ -166,8 +168,6 @@ ul {
 .read-more {
     font-size: 14px;
     font-weight: 600;
-    text-transform: uppercase;
-    display: block;
 }
 .image {
     height: 100%;
