@@ -6,33 +6,27 @@
     --dark-blue: #10233A;
 
 }
-
 /* fonts to use*/
 @font-face {
     font-family: poppins;
     src: url(../font/Poppins-Regular.ttf);
 }
-
 @font-face {
     font-family: poppins-bold;
     src: url(../font/Poppins-Bold.ttf);
 }
-
 * {
     -webkit-font-smoothing: antialiased;
     font-family: 'poppins';
 }
-
 html,
 body {
     margin: 0px;
     height: 100%;
 }
-
 a {
     text-decoration: none;
 }
-
 ul {
     list-style-type: none;
     padding: 0;
@@ -42,39 +36,31 @@ ul {
 .text-orange {
     color: var(--primary);
 }
-
 .text-gray {
     color: var(--secondary);
 }
-
 .text-blue {
     color: var(--blue);
 }
-
 /* bg color */
 .bg-orange {
     background-color: var(--primary);
 }
-
 .bg-light-gray {
     background-color: var(--ternary);
 }
-
 .bg-blue {
     background-color: var(--blue);
 }
-
 .bg-dark-blue {
     background-color: var(--dark-blue);
 }
-
 /* button */
 .btn-orange {
     background-color: var(--primary);
     border-radius: 50px;
     color: #fff;
 }
-
 .btn-orange:hover {
     border: 1px solid var(--primary);
     color: var(--primary);
@@ -84,25 +70,20 @@ ul {
 .f-12 {
     font-size: 12px;
 }
-
 .f-14 {
     font-size: 14px;
 }
-
 .f-24 {
     font-size: 24px;
 }
-
 .f-36 {
 
     font-size: 36px;
 }
-
 .f-48 {
 
     font-size: 48px;
 }
-
 .f-bold {
     font-family: poppins-bold;
 
@@ -127,11 +108,9 @@ ul {
 .navbar-button:focus {
     box-shadow: 0 0 05px var(--primary);
 }
-
 .nav-link:hover {
     color: var(--primary)
 }
-
 /* Navbar css ends here */
 
 /* Header inner section css starts */
@@ -139,7 +118,6 @@ ul {
     max-width: 50px;
     left: 40px;
 }
-
 /* Header inner section css end */
 
 /* About US section css starts */
@@ -148,13 +126,9 @@ ul {
     max-width: 380px;
     max-height: 280px;
 }
-
 /* About US section css ends */
 
-
 /* Features section css starts */
-
-
 .iconBox {
     border: 5px solid #f6f7fb;
     border-radius: 5px;
@@ -165,13 +139,11 @@ ul {
     transition: all 300ms ease-in-out;
     margin-top: 10px;
 }
-
 .iconBox:hover {
     transform: scale(1.05);
     border: 3px solid var(--primary);
 
 }
-
 .iconBox a {
     color: var(--blue);
     display: block;
@@ -181,7 +153,6 @@ ul {
     margin-bottom: 24px;
     text-decoration: none;
 }
-
 .iconBox .icon {
     border-radius: 50%;
     display: block;
@@ -191,33 +162,25 @@ ul {
     height: 80px;
     width: 80px;
 }
-
 /* Features section css ends */
 
 /* experience section css starts */
-
-
 .content-box-fluid {
     width: 100%;
 }
-
 .read-more {
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     display: block;
 }
-
 .image {
     height: 100%;
     width: 100%
 }
-
 /* experience section css ends */
 
-
 /* work section css starts */
-
 .work-text {
     font-size: 22px;
     font-weight: 700;
@@ -225,27 +188,22 @@ ul {
     text-transform: uppercase;
     position: relative;
 }
-
 /* work section css ends */
 
 /* blog section css starts */
-
 .blog-content {
     padding: 30px 25px;
     border: 5px solid #f6f7fb;
 
 }
-
 /* blog section css ends */
 
 /* contact section css starts */
-
 .contact-info span,
 .contact-info a {
     color: var(--secondary);
     display: block;
 }
-
 .contact-info span img,
 .contact-info a img {
     display: inline-block;
@@ -253,11 +211,9 @@ ul {
     width: 25px;
     margin-right: 20px;
 }
-
 .contact-info a {
     margin-top: 30px;
 }
-
 form .input {
     border: 1px solid #e5e6ea;
     border-radius: 0;
@@ -267,11 +223,9 @@ form .input {
     margin-bottom: 30px;
     height: 60px;
 }
-
 form textarea.form-control {
     height: 180px;
 }
-
 /* contact section css ends */
 
 /* Responsive */
@@ -280,103 +234,79 @@ form textarea.form-control {
         width: 60%;
 
     }
-
     .bg-about-us {
         margin-left: 70px;
         max-width: 32%;
         max-height: 280px;
     }
-
     .image {
         height: 100%;
         width: 100%
     }
 }
-
 @media screen and (max-width:1390px) {
     .w-content {
         width: 100%;
 
     }
-
     .image {
         height: 350px;
         width: 100%
     }
-
 }
-
 @media screen and (max-width:991px) {
     .bg-about-us {
         margin-left: 70px;
         max-width: 580px;
         max-height: 320px;
     }
-
     .pb-80 {
         padding-bottom: 40px;
     }
-
     .mb-80 {
         margin-bottom: 40px;
     }
 }
-
 @media screen and (min-width: 768px) {
     .content-box-fluid {
         max-width: 505px;
     }
 }
-
 @media screen and (max-width: 768px) {
     .blog-content {
-        padding: 10px 15px;
-
+    padding: 10px 15px;
     }
-
     form .input {
-
         margin-bottom: 10px;
     }
 }
-
 @media screen and (max-width:550px) {
     .f-48 {
         font-size: 40px;
     }
-
     .image {
         height: 250px;
 
     }
-
 }
-
-
 @media screen and (max-width:380px) {
     .f-48 {
         font-size: 32px;
     }
-
     .f-12 {
         font-size: 12px;
     }
-
     .f-14 {
         font-size: 12px;
     }
-
     .f-24 {
         font-size: 18px;
     }
-
     .mb-80 {
         margin-bottom: 20px;
     }
-
     .work-text {
         font-size: 16px;
 
     }
-
 }
