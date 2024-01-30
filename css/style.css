@@ -262,7 +262,7 @@ box-shadow: none;
 }
 @media screen and (min-width: 768px) {
     .content-box-fluid {
-        max-width: 505px;
+        max-width: 490px;
     }
 }
 @media screen and (max-width: 768px) {
