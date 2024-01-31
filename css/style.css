@@ -251,7 +251,7 @@ box-shadow: none;
         max-width: 100%;
     }
 }
-@media screen and (max-width:991px) {
+@media screen and (max-width:992px) {
     .bg-about-us {
         margin-left: 70px;
         max-width: 580px;
@@ -295,7 +295,7 @@ box-shadow: none;
         height: 250px;
     }
     .container-width{
-        max-width: 540px;
+        max-width:  540px;
     }
 }
 @media screen and (max-width:380px) {
@@ -316,5 +316,8 @@ box-shadow: none;
     }
     .work-text {
         font-size: 16px;
+    }
+    .container-width{
+        max-width:  100%;
     }
 }
