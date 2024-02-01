@@ -8,6 +8,9 @@
   <title>Document</title>
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet " href="./css/owl.carousel.min.css">
+<link rel="stylesheet " href="./css/owl.theme.default.min.css">
+
 </head>
 
 <body>
@@ -431,19 +434,18 @@
     <!-- Partners section starts -->
     <section class="mt-2 mt-md-5 px-3 px-md-0">
       <div class="container py-5   ">
-        <div class="row">
-          <div class=" col col-lg-3 mt-3 align-items-center justify-content-center justify-content-lg-start  d-flex">
-            <img src="./images/partner/pure.png" alt="pure-pic" width="auto" height="auto" class="object-fit-contain">
-          </div>
-          <div class=" col col-lg-3 mt-3 align-items-center justify-content-center justify-content-lg-start d-flex"><img
-              src="./images/partner/hand-crafted.png" alt="hand-crafted-pic" width="auto" height="auto"
-              class="object-fit-contain"> </div>
-          <div class=" col col-lg-3 mt-3 align-items-center justify-content-center justify-content-lg-start d-flex"><img
-              src="./images/partner/hand-made.png" alt="hand-made-pic" width="auto" height="auto"
-              class="object-fit-contain"> </div>
-          <div class=" col col-lg-3 mt-3 align-items-center justify-content-center justify-content-lg-start d-flex"><img
-              src="./images/partner/art-studio.png" alt="art-studio-pic" width="auto" height="auto"
-              class="object-fit-contain"> </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item"> <img src="./images/partner/pure.png" alt="pure-pic" width="186px" height="57px" class="object-fit-contain"></div>
+          <div><img
+            src="./images/partner/hand-crafted.png" alt="hand-crafted-pic" width="186px" height="57px" 
+            class="object-fit-contain">  </div>
+          <div class="item"> <img
+            src="./images/partner/hand-made.png" alt="hand-made-pic" width="186px" height="57px" 
+            class="object-fit-contain"> </div>
+          <div class="item"> <img
+            src="./images/partner/art-studio.png" alt="art-studio-pic" width="186px" height="57px" 
+            class="object-fit-contain"> </div>
+    
         </div>
       </div>
     </section>
@@ -535,5 +537,31 @@
   </footer>
   <!-- fotter section starts  -->
   <script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>  
+  <script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:1500,
+    time:1,
+    responsive:{
+        0:{
+            items:1
+        },
+        500:{
+            items:2
+        },
+        750:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+  </script>
 </body>
 </html>
