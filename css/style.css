@@ -179,6 +179,9 @@ ul {
     height: 100%;
     width: 100%
 }
+.h-87{
+    height: 87%;
+}
 /* experience section css ends */
 
 /* work section css starts */
@@ -195,6 +198,10 @@ ul {
 .blog-content {
     padding: 30px 25px;
     border: 5px solid var(--ternary);
+}
+.blog-border::after{
+content: "|";
+margin-left: 7px;
 }
 /* blog section css ends */
 
@@ -275,6 +282,7 @@ box-shadow: none;
     .container-width{
         max-width: 720px;
     }
+    
 }
 @media screen and (min-width: 768px) {
     .content-box-fluid {
@@ -284,7 +292,7 @@ box-shadow: none;
 }
 @media screen and (max-width: 768px) {
     .blog-content {
-    padding: 10px 15px;
+    padding: 7px 10px;
     }
     form .input {
         margin-bottom: 10px;
@@ -305,6 +313,9 @@ box-shadow: none;
     }
     .container-width{
         max-width:  540px;
+    }
+    .h-87{
+        height: auto;
     }
 }
 @media screen and (max-width:380px) {
