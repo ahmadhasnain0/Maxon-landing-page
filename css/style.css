@@ -292,6 +292,9 @@ box-shadow: none;
     .container-width{
         max-width: 540px;
     }
+    .f-36{
+        font-size: 30px;
+    }
 }
 @media screen and (max-width:576px) {
     .f-48 {
@@ -316,6 +319,10 @@ box-shadow: none;
     }
     .f-24 {
         font-size: 18px;
+        
+    }
+    .f-36 {
+        font-size: 24px;
     }
     .mb-80 {
         margin-bottom: 20px;
