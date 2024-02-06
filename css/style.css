@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 :root {
     --primary: #ff7214;
     --secondary: #6c6c6f;
@@ -7,18 +10,10 @@
     --white:#fff;
     --light-gray:#e5e6ea;
 }
-/* fonts to use*/
-@font-face {
-    font-family: poppins;
-    src: url(../font/Poppins-Regular.ttf);
-}
-@font-face {
-    font-family: poppins-bold;
-    src: url(../font/Poppins-Bold.ttf);
-}
+
 * {
     -webkit-font-smoothing: antialiased;
-    font-family: 'poppins';
+    font-family: 'Poppins', sans-serif;
 }
 html,
 body {
@@ -89,9 +84,6 @@ ul {
 .f-48 {
     font-size: 48px;
 }
-.f-bold {
-    font-family: poppins-bold;
-}
 
 /* letter spacing */
 .ls-1 {
@@ -149,7 +141,6 @@ ul {
 .iconBox-tilte {
     color: var(--blue);
     display: block;
-    font-family: poppins;
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 18px;
