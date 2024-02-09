@@ -27,6 +27,7 @@ ul {
     list-style-type: none;
     padding: 0;
 }
+
 .title-exceed{
     width: 100%;
     white-space: nowrap; 
@@ -97,7 +98,7 @@ ul {
 
 /* custom padding */
 .pb-80 {
-    padding-bottom: 80px;
+    padding-bottom: 70px;
 }
 
 /* Navbar css starts here */
@@ -240,6 +241,9 @@ box-shadow: none;
     } 
     .container-width{
         max-width: 720px;
+    }
+    .w-content {
+        width: 50%;
     }
 }
 @media screen and (min-width: 768px) {
