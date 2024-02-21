@@ -319,4 +319,7 @@ box-shadow: none;
     .container-width{
         max-width:  100%;
     }
+    .count{
+        width: 35px;
+        }
 }
