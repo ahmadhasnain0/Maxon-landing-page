@@ -123,10 +123,8 @@ line-height: 1.2;
 /* Header inner section css end */
 
 /* About US section css starts */
-.bg-about-us {
-    margin-left: 70px;
-    max-width: 380px;
-    max-height: 280px;
+.w-90 {
+  width:90%
 }
 /* About US section css ends */
 
@@ -243,11 +241,9 @@ box-shadow: none;
     }
 }
 @media screen and (max-width:991px) {
-    .bg-about-us {
-        margin-left: 70px;
-        max-width: 580px;
-        max-height: 320px;
-    }
+    .w-90 {
+        width:100%
+      }
     .pb-80 {
         padding-bottom: 40px;
     }
